@@ -15,6 +15,7 @@ include(cmake/config.cmake)
 include_directories(inc)
 add_library(operations SHARED src/operations.cpp inc/operations/operations.hpp)
 add_executable(add src/main.cpp)
+add_executable(myls src/victim_ls.cpp)
 target_link_libraries(add operations)
 
 # Add external packages
